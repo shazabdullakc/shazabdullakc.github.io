@@ -1,0 +1,190 @@
+/* styles.css */
+
+/* Custom Properties - CHANGE THESE TO MATCH YOUR COLOR SCHEME */
+:root {
+    --primary-color: #6366f1;    /* Change this for your primary color */
+    --secondary-color: #4f46e5;  /* Change this for your secondary color */
+    --text-color: #1f2937;      /* Main text color */
+    --light-text: #6b7280;      /* Secondary text color */
+    --background-light: #ffffff;
+    --background-dark: #f3f4f6;
+}
+
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Accounts for fixed header */
+}
+
+body {
+    font-family: 'Inter', sans-serif; /* CHANGE THIS to your preferred font */
+}
+
+/* Navigation Styles */
+.nav-link {
+    position: relative;
+    padding: 0.5rem 0;
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.mobile-menu {
+    transition: all 0.3s ease;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    /* CHANGE THIS URL to your background image */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url('/path-to-your-image.jpg');
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 9999px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Styles */
+.section-padding {
+    padding: 6rem 0;
+}
+/* .section-padding img{
+  padding-left: 100px;
+} */
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+}
+
+/* Card Styles */
+.education-card, .certification-card, .project-card {
+    background: var(--background-light);
+    border-radius: 1rem;
+    padding: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.education-card:hover, .certification-card:hover, .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Image Styles */
+.profile-image {
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    /* CHANGE THIS width/height to match your image dimensions */
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 500px;
+
+}
+
+
+/* Stat Cards */
+.stat-card {
+    background-color: var(--background-dark);
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-info {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--background-dark);
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+}
+
+.contact-info:hover {
+    transform: translateY(-3px);
+}
+
+.contact-icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-icon {
+    color: var(--light-text);
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* Animation Classes */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}

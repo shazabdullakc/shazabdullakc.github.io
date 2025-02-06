@@ -1,0 +1,259 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="main.css">
+    <!-- Animation Library -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<script src="main.js">
+
+</script>
+</head>
+<body class="font-sans">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-sm shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-2xl font-bold text-purple-600">Shaz abdulla</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#certifications" class="nav-link">Certifications</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden mobile-menu-button">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden mobile-menu md:hidden">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#education" class="mobile-link">Education</a>
+            <a href="#certifications" class="mobile-link">Certifications</a>
+            <a href="#projects" class="mobile-link">Projects</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="absolute inset-0 bg-gradient-to-r from-purple-600/90 to-blue-600/90"></div>
+        <div class="relative z-10 flex items-center justify-center min-h-screen text-center">
+            <div data-aos="fade-up">
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-4">Shaz abdulla</h1>
+                <p class="text-xl md:text-2xl text-gray-200">Student SRM university/ ML intern Techcora Corp</p>
+                <div class="mt-8">
+                    <a href="#contact" class="cta-button">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2" data-aos="fade-right">
+                    <img src="https://media.licdn.com/dms/image/v2/D5603AQELrJPihKjezA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1724296426478?e=1736985600&v=beta&t=rYW6piJV1HRCFA1zOIPYsTZYeuDD1pSYeBJN0oFQSxE" alt="Profile" class="profile-image">
+                </div>
+                <div class="md:w-1/2" data-aos="fade-left">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="text-gray-600 text-lg mb-6">Hi, I’m Shaz Abdulla
+Full-Stack Developer | Data Science Enthusiast | Tech Innovator
+
+  passionate Full-Stack Developer and Data Science enthusiast with a flair for building tech-driven solutions. Currently pursuing a B.Tech in Computer Science with a specialization in Data Science at SRM University, I've spent the past few years refining my technical skills and applying them in real-world projects.
+
+In 2023, I co-founded NewWave, an online store specializing in shoes and watches, which serves customers across South India. As co-founder, I developed our e-commerce platform from the ground up, focusing on seamless user experiences and efficient backend systems. This venture has strengthened my skills in both front-end and back-end development and given me hands-on business experience.
+
+Additionally, I interned as an ML specialist at Techcora Corp, where I contributed to machine learning models that optimize data analysis for various applications. Working with a team of experts, I was able to deepen my understanding of data-driven development and explore the potential of machine learning in business contexts.
+
+My goal is to leverage my unique mix of experience in e-commerce and machine learning to create technology solutions that are as functional as they are innovative.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="stat-card">
+                            <h3><b>Experience</b></h3>
+                            <p>ML inter at techcora corp</p>
+                            <p>Newwave ,a personal Startup</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3><b>Projects</b></h3>
+                            <p><a href="https://chat.whatsapp.com/Diz75lizZ6SJZQvMOkaZAF">NewWave</a></p>
+                            <p><a href="https://github.com/shazabdullakc/Fitnessapp">Fitness applications Using java</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">Education</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="education-card" data-aos="fade-up">
+                    <div class="education-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                        </svg>
+                    </div>
+                    <h3>BTech CSE Data Science</h3>
+                    <p class="text-gray-600">SRM university</p>
+                    <p class="text-gray-500">2023 - 2027</p>
+                    <!-- <p class="mt-4">[Description]</p> -->
+                </div>
+                <div class="education-card" data-aos="fade-up">
+                    <div class="education-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 14l9-5-9-5-9 5 9 5z"/>
+                        </svg>
+                    </div>
+                    <h3>Dayapuram Residential School</h3>
+                    <p class="text-gray-600">10+2,PCM</p>
+                    <p class="text-gray-500">2021 - 2022</p>
+                    <!-- <p class="mt-4">[Description]</p> -->
+                </div>
+                <!-- Add more education cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">Certifications</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <h3>Data Structures and OOP with C++ : CS104, CS105 Masterclass</h3>
+                    <p>Udemy</p>
+                    <p>November 2024</p>
+                </div>
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <h3>Python and Django Full Stack Web Developer Bootcamp</h3>
+                    <p>Udemy</p>
+                    <p>December 2023</p>
+                </div>
+                <div class="certification-card" data-aos="fade-up">
+                    <div class="certification-icon">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                        </svg>
+                    </div>
+                    <h3>ML Intern</h3>
+                    <p>Techcora Corp</p>
+                    <p>October-December 2024</p>
+                </div>
+
+                <!-- Add more certification cards as needed -->
+            </div>
+            <img src="Udemy.jpg" alt="">
+            <img src="Udemyweb.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="project-card" data-aos="fade-up">
+                    <img src="fitnessappui.png" alt="Project" class="project-image">
+                    <div class="p-6">
+                        <h3><a href="https://github.com/shazabdullakc/Fitnessapp"><b>Fitness application using java</b></a></h3>
+
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tech-tag">FitnessPlanner is a simple Java Swing application designed to help users create personalized fitness and diet plans based on their goals, personal information, and activity levels. The app calculates daily calorie targets, generates workout routines, and provides diet suggestions to help users achieve their fitness objectives, whether it's weight loss, muscle gain, or maintenance.</span>
+                            <!-- Add more tech tags -->
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-aos="fade-up">
+                    <img src="newwaveui.png" alt="Project" class="project-image">
+                    <div class="p-6">
+                        <h3><a href="https://github.com/shazabdullakc/Newwave"><b>NewWave</b></a></h3>
+                        <p></p>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="tech-tag">Online Shoe Store - NewWave This is a full-stack web application for an online shoe store, NewWave, designed to provide users with a seamless shopping experience for premium shoes. The project demonstrates a complete end-to-end solution, covering both front-end and back-end development.</span>
+                            <!-- Add more tech tags -->
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more project cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title text-center">Contact</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="grid grid-cols-2 gap-8 mb-8">
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <p>shazabdullakc@gmail.com</p>
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-icon">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                        </div>
+                        <p>7994735333</p>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shaz-abdulla-kc-896722292/" class="social-icon">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/shazabdullakc" class="social-icon">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Shaz Abdulla. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
